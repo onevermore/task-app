@@ -17,6 +17,7 @@ export function Button({ variant = 'primary', className = '', ...props }: Button
   return (
     <button
       className={`text-lg font-medium tracking-[.02em] transition-colors disabled:cursor-not-allowed disabled:opacity-50 ${variantClasses[variant]} ${className}`}
+
       {...props}
     />
   )
